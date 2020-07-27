@@ -32,7 +32,7 @@ class Car {
     }
   
     accelerate(value) {
-        if(this._speed < this._maxSpeed) {
+        if(this._speed + value < this._maxSpeed) {
             this._speed += value;
         }
     }
@@ -40,8 +40,6 @@ class Car {
     decelerate(value) {
         if (this._speed - value > 0) {
             this._speed -= value;
-        } else {
-            this._speed = 0;
         }
     }
   
