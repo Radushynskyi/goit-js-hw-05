@@ -1,8 +1,8 @@
 console.log("Задание 3");
 
 class Storage {
-    constructor([...items]) {
-        this.items = [...items];
+    constructor(items) {
+        this.items = items;
     }
     getItems() {
         return this.items;
